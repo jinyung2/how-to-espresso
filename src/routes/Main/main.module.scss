@@ -1,0 +1,16 @@
+.mainContainer {
+  border: 1px solid var(--color-inverse);
+  padding: 1rem;
+  border-radius: var(--border-radius-subtle);
+}
+
+.titleContainer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.descriptionContainer {
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}

@@ -1,0 +1,24 @@
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
