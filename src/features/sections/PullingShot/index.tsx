@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 
 export class PullingShot extends PureComponent {
   render() {

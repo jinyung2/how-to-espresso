@@ -31,7 +31,7 @@ export class Main extends Component<MainProps, MainState> {
           </p>
         </div>
         <div>
-          {espressoSteps.map(({ title, value, Content }, i) => (
+          {espressoSteps.map(({ title, value, Content }) => (
             <Fragment key={value}>
               <Accordion<CoffeeSteps> title={title} value={value}>
                 <Content />
