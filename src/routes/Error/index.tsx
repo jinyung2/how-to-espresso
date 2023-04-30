@@ -1,12 +1,8 @@
-import React, { Component } from 'react'
-
-import styles from './error.module.scss';
+import { Component } from "react";
 
 export class Error extends Component {
   render() {
-    return (
-      <h1>Error Page</h1>
-    )
+    return <h1>Error Page</h1>;
   }
 }
 

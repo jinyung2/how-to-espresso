@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Outlet } from 'react-router-dom';
+import { Component } from "react";
+import { Outlet } from "react-router-dom";
 
-import styles from './layout.module.scss';
+import styles from "./layout.module.scss";
 
 export class Layout extends Component {
   render() {
@@ -9,7 +9,7 @@ export class Layout extends Component {
       <div className={styles.layoutContainer}>
         <Outlet />
       </div>
-    )
+    );
   }
 }
 

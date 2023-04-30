@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from "react";
+import { Component, Fragment } from "react";
 
 import styles from "./main.module.scss";
 import Accordion from "../../components/Accordion";
 import { CoffeeSteps } from "../../constants/espresso-steps";
 
-type MainProps = {};
+type MainProps = Record<string, never>;
 
 type MainState = {
   activeStep: CoffeeSteps | null;
