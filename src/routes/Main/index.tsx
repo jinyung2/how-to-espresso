@@ -2,7 +2,7 @@ import { Component, Fragment } from "react";
 
 import styles from "./main.module.scss";
 import Accordion from "../../components/Accordion";
-import { CoffeeSteps } from "../../constants/espresso-steps";
+import { CoffeeSteps, espressoSteps } from "../../constants/espresso-steps";
 
 type MainProps = Record<string, never>;
 
@@ -13,10 +13,6 @@ type MainState = {
 export class Main extends Component<MainProps, MainState> {
   constructor(props: MainProps) {
     super(props);
-    // controls the active state of the accordion elements
-    this.state = {
-      activeStep: null,
-    };
   }
 
   render() {
@@ -29,19 +25,17 @@ export class Main extends Component<MainProps, MainState> {
         <div className={styles.descriptionContainer}>
           <p>
             This is a beginner's guide to making espresso at home. For those of
-            you like me getting into the world of home espresso for the first
-            time, I hope to provide some basic instruction for developing a
+            you also getting into the world of home espresso for the first time,
+            you can use this as a basic set of instructions for developing a
             foundation in pulling and enjoying a solid shot of espresso.
           </p>
         </div>
-        <hr />
         <div>
-          {Object.values(CoffeeSteps).map((value) => (
+          {espressoSteps.map(({ title, value, Content }, i) => (
             <Fragment key={value}>
-              <Accordion<CoffeeSteps>
-                title="Test"
-                value={CoffeeSteps.BEAN_SELECTION}
-              />
+              <Accordion<CoffeeSteps> title={title} value={value}>
+                <Content />
+              </Accordion>
             </Fragment>
           ))}
         </div>
