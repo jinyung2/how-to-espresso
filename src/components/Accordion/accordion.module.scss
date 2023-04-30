@@ -1,0 +1,36 @@
+.accordionContainer {
+  border: 1px solid var(--color-inverse);
+  border-bottom: none;
+  border-top-right-radius: var(--border-radius-default);
+  border-top-left-radius: var(--border-radius-default);
+}
+
+.accordionTrigger {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  font-size: var(--font-size-6);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordionContent {
+  padding: 0.5rem 1rem 2rem;
+}
+
+.accordionIndicator {
+  font-size: 1.25rem;
+}
+
+.title {
+  transition: all 0.1s;
+}
+
+.isOpen {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
