@@ -26,3 +26,10 @@ p {
 button {
   font-family: inherit;
 }
+
+ol,
+ul {
+  & > li {
+    margin-bottom: 0.5rem;
+  }
+}
