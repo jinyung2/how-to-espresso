@@ -1,12 +1,10 @@
 import { PureComponent } from "react";
 
-import styles from "./coffee-beans.module.scss";
-
 export class CoffeeBeans extends PureComponent {
   render() {
     return (
       <div>
-        <ol className={styles.orderedList}>
+        <ol>
           <li>
             Look for freshly roasted beans: Freshness is key when it comes to
             espresso, so look for beans that have been roasted recently.
